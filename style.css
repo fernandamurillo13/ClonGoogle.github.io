@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0; 
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+a{
+    text-decoration: none;
+    cursor: pointer; /*Enlaces*/
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex; /*Es para poder poner nuestra parte del navegadador en la parte final*/
+    justify-content: flex-end;
+}
+
+header nav .nav-derecho{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center; /*Es justificar el contenido al centro*/
+    align-items: center;  
+
+}
+
+nav .nav-derecho a{
+    margin-right: 10px; /*Da espacio pero solo de parte de la derecha*/
+    color: black;
+}
+
+#profile{
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 50px;
+}
+
+main {
+    margin-top: 130px;
+    text-align: center;
+}
+
+main .main-logo{ /*la caja de la imagen*/
+    width: 500px;
+    margin: 0 auto; /*que calcule la misma distancia*/
+    margin-bottom: 30px; /*el espacio exterior*/
+    align-items: center;
+}
+
+main .main-logo img{
+    width: 500px; /*es el tamano de la imagen*/
+    margin-bottom: 30px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{ /*cajita del buscador, puede hacerse mas ancha*/ 
+    width: 525px;
+    border-radius:  100px;
+    border: 1px solid rgb(98, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 430px;
+    height: 25px;
+    border: none;
+    outline: none;
+} 
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons button{
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 0 15px; /*Espacio interior*/
+    margin-right: 30px; /*solo es espacio a la derecha*/
+    margin-left: 20px;
+    background-image: linear-gradient(to right, #50e986 0%, #08f7c7  51%, #76e856  100%)     
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    
+}
+
+footer{
+    width:  100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0; /*que todo se vaya hacia abajo*/
+    display: grid; /*es una cuasricula*/
+    grid-template-columns: 1fr 1fr; /*solo lo idvide en dos la cajita*/
+    align-items: center;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #cecece;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .fotter-right{
+    justify-self: right;
+}
+
+
+
+footer ul{
+    margin: auto;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer ul li a{ /*esto si es para cambiar la distancia entre las palabras*/
+    margin: 10px;
+    color: #525252;
+} 
+/*
+.btn-grad {
+    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+*/
+
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
